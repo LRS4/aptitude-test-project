@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+		<div class="alert alert-info" role="alert" style="display:none" id="tickCorrect">
+			Correct! <a href="#" class="alert-link feedback">Show feedback</a>.
+		</div>
+
+		<div class="alert alert-danger feedback" role="alert" style="display:none" id="tickIncorrect">
+			Incorrect! <a href="#" class="alert-link feedback">Show feedback</a>.
+		</div>
+
+		<!-- Image -->
+		<div class="container text-center" id="header">
+			<h3>Question 1 of 30</h3>
+			<img id="chart" alt="chart" src=""></img>
+		</div>
+
+		<!-- Question -->
+		<div class="container text-center" id="question-box">
+			<p>Loading..</p>
+		</div>
+		
+		<!-- Answer radios -->
+		<div class="container" id="answers">
+			<div class="form-group input-group-lg">
+				<div class="custom-control custom-radio ">
+					<input type="radio" class="custom-control-input input-lg" id="answer1" name="answer" value="100">
+					<label class="custom-control-label" for="answer1"></label>
+				</div>
+				<div class="custom-control custom-radio ">
+					<input type="radio" class="custom-control-input input-lg" id="answer2" name="answer" value="200">
+					<label class="custom-control-label" for="answer2"></label>
+				</div>
+				<div class="custom-control custom-radio ">
+					<input type="radio" class="custom-control-input input-lg" id="answer3" name="answer" value="300">
+					<label class="custom-control-label" for="answer3"></label>
+				</div>
+				<div class="custom-control custom-radio ">
+					<input type="radio" class="custom-control-input input-lg" id="answer4" name="answer" value="400">
+					<label class="custom-control-label" for="answer4"></label>
+				</div>
+				<div class="custom-control custom-radio ">
+					<input type="radio" class="custom-control-input input-lg" id="answer5" name="answer" value="1000">
+					<label class="custom-control-label" for="answer5"></label>
+				</div>
+			</div>
+		</div>
+
+		<!-- Verify warning -->
+		<div class="container text-center">
+			<small class="warning" id="answerWarning" style="display:none">
+				<i class="fa fa-warning"></i> Please select from the options above.
+			</small>
+		</div>
+		
+		<!-- Submit button -->
+		<div class="container" id="submitSection" style="display:none">
+			<div class="text-center">
+				<button class="btn btn-lg btn-dark continue" type="button" id="submit">Submit</button>
+			</div>
+		</div>
+		
+		<!-- Show/hide feedback -->
+		<div class="container text-center" id="feedback_img" style="display:none">
+			<div>
+				<img id="feedback_src" src="static\q1-fb.PNG">
+			</div>
+		</div>
+
+		<!-- Results section-->
+		<div class="container text-center" id="resultsSection" style="display:none">
+			<div class="progressBarModal">
+				<div class="progress">
+				  <div class="progress-bar progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0">
+					0%
+				  </div>
+				</div>
+				<button class="btn btn-lg btn-dark" id="tryAgain" type="button">Try again &raquo;</button>
+			</div>
+		</div>
+		
+{% endblock %}
+	

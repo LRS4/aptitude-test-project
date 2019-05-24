@@ -1,0 +1,55 @@
+nav {
+	margin-bottom: 0px;
+}
+
+h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+h5 {
+	color: white;
+}
+
+img {
+	height: 40%;
+	width: 65%;
+	margin-bottom: 5px;
+}
+
+p {
+	font-size: 20px;
+}
+
+label {
+	font-weight: 300;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+.form-group {
+	margin:0 auto;
+	 width:40%;
+	 margin-bottom: 30px;
+}
+
+#answerWarning {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+#tryAgain {
+	margin-top: 20px;
+}
+
+.custom-radio {
+	transform:scale(1.5);
+	margin-top: 10px;
+}
+
+#feedback_img {
+	margin-top: 30px;
+}

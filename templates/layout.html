@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <!-- HTML Validator: https://validator.w3.org/ -->
+        <!-- JS Validator: https://jshint.com/ -->
+        <!-- Inspiration: https://www.gov.uk/personal-tax-account/sign-in/prove-identity -->
+        <!-- Gif editor: https://ezgif.com/effects/ezgif-3-960a1abf7958.gif -->
+        <!-- Markdown previewer: https://markdownlivepreview.com/ -->
+    
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="generator" content="Jekyll v3.8.5">
+    
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+        <!-- Bootstrap JS-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="https://pngimg.com/uploads/titanic/titanic_PNG7.png">
+    
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <!-- Custom CSS -->
+        <link href="../static/styles.css" rel="stylesheet">
+    
+        <title>Numeric Assessment App</title>
+    
+    </head>
+    
+    <body>
+        <!-- Expandable navbar --> 
+        <div class="pos-f-t">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h4 class="text-white">Numerical Assessment Test</h4>
+              <span class="text-muted">A project to transform printed aptitude tests into an interactive test with real-time feedback. Tools used: HTML, CSS, Bootstrap, JavaScript, jQuery, SQLite3, VS Code. The content is from Assessment Day and was purchased for personal use.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <h5 id="timer">30:00</h5>
+          </nav>
+        </div>
+
+        {% block main %}{% endblock %}
+        
+        <!-- Custom JS -->
+        <script src="../static/script.js"></script>     
+    </body>
+</html>
