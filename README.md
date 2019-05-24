@@ -2,7 +2,7 @@
 
 ## Overview
 
-The project was to create a numerical assessment test from printed PDF materials I purchased from Assessment Day a few years ago. This project is for personal use, for the purposes of reference and learning and therefore any material from Assessment Day will not be included so as to comply with their restrictions of sharing content. However, screenshots can be seen below to get a feel for the end result - with questions omitted. The project:
+The project was to create a numerical assessment test from printed PDF materials I purchased from Assessment Day a few years ago. This project is for personal use, for the purposes of reference and learning and therefore any material from Assessment Day will not be included so as to comply with their restrictions of sharing content. This is mainly the ../static/---.PNG file paths found within the logic to update charts and feedback images. However, a video can be found below to get a feel for the end result. Overview:
 
 * Creates a single page template; question, timer, answer radios, and submit
 * Updates that page by sending AJAX requests to the server
